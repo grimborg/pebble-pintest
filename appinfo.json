@@ -1,0 +1,19 @@
+{
+  "uuid": "6af3bf25-0b6c-49ba-aa77-76da5e9eb090",
+  "shortName": "pintest",
+  "longName": "pintest",
+  "companyName": "MakeAwesomeHappen",
+  "versionCode": 1,
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
+  "targetPlatforms": ["aplite", "basalt"],
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": []
+  }
+}
