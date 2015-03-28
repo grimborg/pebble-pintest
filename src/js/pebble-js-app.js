@@ -1,15 +1,4 @@
-API_ROOT = 'http://192.168.0.32:8000'
-Pebble.addEventListener('ready', function () {
-    doTimeline();
-});
-
-var doTimeline = function () {
-    Pebble.getTimelineToken(function (token) {
-        sendToken(token);
-    }, function (error) {
-        console.log('Error getting the timeline token: ' + error);
-    });
-};
+var API_ROOT = 'https://grimborg-pinserver.herokuapp.com';
 
 var sendToken = function (token) {
     var request = new XMLHttpRequest();
@@ -19,3 +8,17 @@ var sendToken = function (token) {
     };
     request.send();
 };
+
+var doTimeline = function () {
+    Pebble.getTimelineToken(function (token) {
+        sendToken(token);
+    }, function (error) {
+        console.log('Error getting the timeline token: ' + error);
+    });
+};
+
+Pebble.addEventListener('ready', function () {
+    doTimeline();
+});
+
+
